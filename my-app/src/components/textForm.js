@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 
-
-
-
-export default function TextForm(prop) {
+export default function TextForm(props) {
   const [text, setText] = useState("Enter text Here");
 
    const HandleUpClick = ()=>{
@@ -27,10 +24,11 @@ export default function TextForm(prop) {
       window.speechSynthesis.speak(msg);
      };
   return (
-    <div>
-      <h3>{prop.heading}</h3>
-      <div className='mb-3'>
-        <textarea className="postContent" placeholder={text} onChange={handleOnChange} rows={6} cols={100}></textarea>
+    <div className='container' style={{color: props.mode==='dark'?'white':''}}>
+      <h3>{props.heading} </h3>
+      <div className='mb-3' >
+        <textarea className="form-control"  placeholder={text} onChange={handleOnChange} 
+        style={{backgroundColor:props.mode==='dark'?'gray':'white',color: props.mode==='dark'?'white':''}} rows={6} cols={100}></textarea>
         </div>
       <div  style={{ display: 'flex', justifyContent: 'space-between',marginRight: '120px' }}>
       <button className="btn btn-primary"onClick={HandleUpClick}>Convert to UpperCase</button>
