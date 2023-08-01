@@ -5,7 +5,7 @@ import propTypes from 'prop-types'
 export default function Navbar(props) {
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
       <Link to="login" className="nav-link" href="/">{props.title}</Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -21,11 +21,20 @@ export default function Navbar(props) {
           </li>
           {/* Add other navigation links here if needed */}
         </ul>
+      
 
-    <form className="form-inline my-2 my-lg-0">
+
+
+    {/* <form className="form-inline my-2 my-lg-0">
       <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
       <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> */}
+    <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
+  <input className="form-check-input" onClick={props.ToggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+  <label className="form-check-label" htmlfor="flexSwitchCheckDefault">Enable Darkmode</label>
+</div>
+
+
       </div>
     </nav>)
 }
