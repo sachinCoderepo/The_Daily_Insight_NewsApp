@@ -1,0 +1,21 @@
+
+from flask import Flask, jsonify
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+@app.route('/api/employees')
+def get_employees():
+    employees = [
+        { "id": 1, "name": "Sachin", "position": "Developer", "package": 30000 },
+        { "id": 2, "name": "Smith", "position": "Front-end", "package": 25000 },
+        { "id": 3, "name": "Johnson", "position": "Tester", "package": 28000 },
+        { "id": 4, "name": "Sachin", "position": "Developer", "package": 30000 },
+        { "id": 5, "name": "Smith", "position": "Front-end", "package": 25000 }
+        
+    ]
+    return jsonify(employees)
+
+if __name__ == '__main__':
+    app.run(debug=True)

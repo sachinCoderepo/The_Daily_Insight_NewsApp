@@ -1,21 +1,4 @@
 import React, { useState } from 'react'
-import ReactApexChart from 'react-apexcharts';
-
-const PieChart = () => {
-    const options = {
-        chart: {
-            type: 'pie',
-        },
-        labels: ['Devlopers', 'Frant-end', 'Testers', 'Others'],
-        series: [35, 25, 40, 10], // The data percentages for each slice
-    };
-    return (
-        <div>
-            <h3>Company Employees over-all performance</h3>
-            <ReactApexChart options={options} series={options.series} type="pie" width="500" />
-        </div>
-    );
-};
 
 export default function About() {
     const [myStyle, setmyStyle] = useState({
@@ -70,7 +53,7 @@ export default function About() {
                     <button className="btn btn-primary" onClick={DarkClick}>{btnTxt}</button>
                 </div>
             </div>
-            <PieChart />
+            
         </div>
     )
 }

@@ -24,7 +24,7 @@ export default function TextForm(props) {
       window.speechSynthesis.speak(msg);
      };
   return (
-    <div className='container' style={{color: props.mode==='dark'?'white':''}}>
+    <div className='container' style={{color: props.mode==='dark'?'white':'dark'}}>
       <h3>{props.heading} </h3>
       <div className='mb-3' >
         <textarea className="form-control"  placeholder={text} onChange={handleOnChange} 

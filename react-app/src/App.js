@@ -6,6 +6,8 @@ import TextForm from './components/textForm'
 import LoginPage from './components/login';
 import Alert from './components/Alert';
 import { useState } from 'react';
+import PieChart from './components/Piechart';
+import News from './components/news';
 
 
 
@@ -23,6 +25,7 @@ function App() {
     setmode("dark")
     document.body.style.backgroundColor="#042743"
     showAlert("Dark-Mode is Enable, Success")
+    
     }
     else{
       setmode("light")
@@ -41,7 +44,9 @@ function App() {
         <Routes>
         <Route path="/login" element={<LoginPage/>} />
           <Route path="/About" element={<About />} />
-          <Route path="/textForm" element={<TextForm heading="Enter text to Analyze below" mode={mode} />} />
+          <Route path="/" element={<TextForm heading="Enter text to Analyze below" mode={mode} />} />
+          <Route path="employee" element={<PieChart />} />
+          <Route path="news" element={<News />} />
         </Routes>
       </div>
 

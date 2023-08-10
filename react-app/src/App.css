@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+/* styles.css or your custom CSS file */
+.Style-white text {
+  fill: white !important;
+}
+
+.style-black text {
+  fill: black !important;
+}
