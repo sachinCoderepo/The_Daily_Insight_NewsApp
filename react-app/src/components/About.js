@@ -28,13 +28,13 @@ export default function About() {
 
         <div className='container' style={myStyle}>
             <h2> About Us </h2>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
+            <div className="accordion" id="accordionExample">
+                <div className="accordion-item">
+                    <h2 className="accordion-header">
 
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                    <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
                             <strong>सचिन रमेश तेंडुलकर  Sachin Tendulkar,</strong> सचिन रमेश तेंडुलकर  Sachin Tendulkar, जन्म: 24 अप्रैल 1973) क्रिकेट के इतिहास में विश्व के सर्वश्रेष्ठ बल्लेबाज़ में माने जाते हैं। भारत के सर्वोच्च नागरिक सम्मान भारत रत्न से सम्मानित होने वाले वह सर्वप्रथम खिलाड़ी और सबसे कम उम्र के व्यक्ति हैं। राजीव गांधी खेल रत्न पुरस्कार से सम्मानित होने वाले पहले क्रिकेट खिलाड़ी हैं। सन् २००८ में वे पद्म विभूषण से भी पुरस्कृत किये जा चुके है।
 
                             सन् १९८९ में अन्तर्राष्ट्रीय क्रिकेट में पदार्पण के पश्चात् उन्होंने बल्लेबाजी में भी कई कीर्तिमान स्थापित किए हैं। उन्होंने टेस्ट व एक दिवसीय क्रिकेट, दोनों में सर्वाधिक शतक अर्जित किये हैं। वे टेस्ट क्रिकेट में सबसे ज़्यादा रन बनाने वाले बल्लेबाज़ हैं। इसके साथ ही टेस्ट क्रिकेट में १४००० से अधिक रन बनाने वाले वह विश्व के एकमात्र खिलाड़ी हैं। एकदिवसीय मैचों में भी उन्हें कुल सर्वाधिक रन बनाने का कीर्तिमान प्राप्त है।  उन्होंने अपना पहला प्रथम श्रेणी क्रिकेट मैच मुम्बई के लिये १४ वर्ष की आयु में खेला था। उनके अन्तर्राष्ट्रीय खेल जीवन की शुरुआत १९८९ में पाकिस्तान के विरुद्ध कराची से हुई।

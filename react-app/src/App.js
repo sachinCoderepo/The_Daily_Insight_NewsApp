@@ -46,7 +46,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/" element={<TextForm heading="Enter text to Analyze below" mode={mode} />} />
           <Route path="employee" element={<PieChart />} />
-          <Route path="news" element={<News />} />
+          <Route path="news" element={<News pageSize = {5}/>} />
         </Routes>
       </div>
 
